@@ -1,157 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawsome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <title>Product App</title>
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <h1> Product Hunt</h1>
-
-        <!-- search box -->
-
-        <div class="search-box">
-            <form action="" onsubmit="return false">
-            <input type="text" id="search" placeholder="Search Product">
-            </form>
+        <div class="container">
+            <h1>Product Hunt</h1>
+            <!-- Search box -->
+            <div class="search-box">
+                <form action="" onsubmit="return false">
+                    <input type="text" id="search" placeholder="Search Product">
+                    <!-- <button id="btn-search">Search</button> -->
+                </form>
+            </div>
+            <div class="filter-box">
+                <a href="#" class="btn active" data-filter="all">All</a>
+                <a href="#" class="btn" data-filter="watch">Watch</a>
+                <a href="#" class="btn" data-filter="shirt">Shirt</a>
+                <a href="#" class="btn" data-filter="gown">Gown</a>
+                <a href="#" class="btn" data-filter="jewelry">Jewelry</a>
+            </div>
         </div>
-        <div class="filer-box">
-            <a href="#" class="btn active" data-fiilter="all">All</a>
-            <a href="#" class="btn" data-fiilter="watch"> Watch</a>
-            <a href="#" class="btn" data-fiilter="shirt"> Shirt</a>
-            <a href="#" class="btn" data-fiilter="gown"> Gown</a>
-            <a href="#" class="btn" data-fiilter="jewelry"> Jewelry</a>
-        </div>
-
     </header>
+    
     <main>
         <div class="slide-container">
-            <section class="container" id="store-products">
-             
-                <!-- watch product -->
-
-                <div class="store-product watch">
-                    <img src="watch image/1.png" alt="">
-                    <div class="product-details">
-                        <h2>Watch Product</h2>
-                        <p> <span>Rs 25000</span> Rs 30000</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="store-product watch" data-product="watch">
-                    <img src="watch image/2.png" alt="">
-                    <div class="product-details">
-                        <h2>Demo Product</h2>
-                        <p> <span>Rs 20000</span> Rs 22000</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="store-product watch">
-                    <img src="watch image/3.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Demo Product</h2>
-                        <p> <span>Rs 1000</span> Rs 4000</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-                  <!-- shirt products -->
-
-                <div class="store-product shirt">
-                    <img src="Shirt img/1.png" alt="">
-                    <div class="product-details">
-                        <h2>Shirt Product</h2>
-                        <p> <span>Rs 500</span> Rs 1500</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="store-product shirt">
-                    <img src="Shirt img/2.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Demo` Product</h2>
-                        <p> <span>Rs 1500</span> Rs 2000</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="store-product shirt">
-                    <img src="Shirt img/3.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Demo Product</h2>
-                        <p> <span>Rs 2500</span> Rs 3000</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <!-- Gown product -->
-
-                <div class="store-product gown">
-                    <img src="Gown img/1.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Gown Product</h2>
-                        <p> <span>Rs 25000</span> Rs 30000</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="store-product gown">
-                    <img src="Gown img/2.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Demo Product</h2>
-                        <p> <span>Rs 100000</span> Rs 130000</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="store-product gown">
-                    <img src="Gown img/3.png" alt="">
-                    <div class="product-details">
-                        <h2>demo Product</h2>
-                        <p> <span>Rs 125000</span> Rs 130000</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <!-- jewelry product -->
-
-                <div class="store-product jewelry">
-                    <img src="Jewelry img/1.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Jewelry Product</h2>
-                        <p> <span>Rs 1.7lac</span> Rs 2.7lac</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="store-product jewelry">
-                    <img src="Jewelry img/2.png" alt="">
-                    <div class="product-details">
-                        <h2>Jewelry Product</h2>
-                        <p> <span>Rs 2.7lac</span> Rs 3.7lac</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="store-product jewelry">
-                    <img src="Jewelry img/3.png" alt="">
-                    <div class="product-details">
-                        <h2>Jewelry Product</h2>
-                        <p> <span>Rs 1lac</span> Rs 2.5lac</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-            </section>
+        <section class="container" id="store-products">
+        
+        <div class="store-product watch">
+            <img src="./images/1.png" alt="">
+            <div class="product-details">
+                <h2>Watch Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
         </div>
-    </main>
+        <div class="store-product watch">
+            <img src="./images/2.png" alt="">
+            <div class="product-details">
+                <h2>Watch Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product watch">
+            <img src="./images/13.png" alt="">
+            <div class="product-details">
+                <h2>Watch Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product shirt">
+            <img src="./images/3.png" alt="">
+            <div class="product-details">
+                <h2>Shirt Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product shirt">
+            <img src="./images/4.png" alt="">
+            <div class="product-details">
+                <h2>Shirt Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product shirt">
+            <img src="./images/5.png" alt="">
+            <div class="product-details">
+                <h2>Shirt Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product gown">
+            <img src="./images/6.png" alt="">
+            <div class="product-details">
+                <h2>Gown Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product shirt">
+            <img src="./images/7.png" alt="">
+            <div class="product-details">
+                <h2>Shirt Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product shirt">
+            <img src="./images/8.png" alt="">
+            <div class="product-details">
+                <h2>Shirt Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product jewelry">
+            <img src="./images/9.png" alt="">
+            <div class="product-details">
+                <h2>Jewelry Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product jewelry">
+            <img src="./images/10.png" alt="">
+            <div class="product-details">
+                <h2>Jewelry Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="store-product jewelry">
+            <img src="./images/11.png" alt="">
+            <div class="product-details">
+                <h2>Jewelry Product</h2>
+                <p> <span>$39.99</span> $29.99</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+</div>
+</main>
+    
 
+    <script src="app.js"></script>
 </body>
-
 </html>
