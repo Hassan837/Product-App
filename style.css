@@ -40,9 +40,7 @@ p {
     line-height: 1.5;
 }
 
-img {
-    /* width: 100%; */
-}
+
 
 .container {
     max-width: 1200px;
@@ -81,7 +79,7 @@ form input {
     border-radius: 3px;
 }
 
-.active {
+.active, .btn:hover {
     background-color: var(--color-primary);
 }
 
